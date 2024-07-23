@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Animated About Us Page Using HTML and CSS</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    
+
+  <body style="background-color: black;"> 
+    <style>
+      * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+  }
+  
+  .hero {
+    background-color: #f8f8f8;
+  }
+  
+  .heading {
+    letter-spacing: 1px;
+    margin: 30px 0px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .heading h1 {
+    font-size: 2.2rem;
+    font-weight: 500;
+    background-color: rgb(229, 87, 5);
+    color: #ffffff;
+    padding: 10px 20px;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 65px auto;
+  }
+  .hero-content {
+    flex: 1;
+    width: 600px;
+    margin: 0px 25px;
+    animation: fadeInUp 2s ease;
+  }
+  .hero-content h2 {
+    font-size: 38px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  .hero-content p {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    color: #666;
+  }
+  .hero-content button {
+    display: inline-block;
+    background-color: #ff4500;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  .hero-content button:hover {
+    background-color: #ff6347;
+    transform: scale(1.1);
+  }
+  .hero-image {
+    flex: 1;
+    width: 600px;
+    margin: auto;
+    animation: fadeInRight 2s ease;
+  }
+  .social {
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    justify-content: center;
+  }
+  .social a {
+    text-decoration: none;
+    color: #222;
+    font-size: 25px;
+    display: inline-block;
+    margin: 0 10px;
+  }
+  .social a:hover {
+    color: #ff4500;
+    transition: 1s ease;
+  }
+  .social i {
+    height: 40px;
+    width: 40px;
+    background-color: #fff;
+    border: 1px solid #222;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+    
+  }
+  
+  @media screen and (max-width: 768px) {
+    .heading h1 {
+      font-size: 45px;
+      margin-top: 30px;
+    }
+    .hero {
+      margin: 0px;
+    }
+    .container {
+      width: 100%;
+      flex-direction: column;
+      margin: 0px;
+      padding: 0px 40px;
+    }
+    .hero-content {
+      width: 100%;
+      margin: 35px 0px;
+    }
+    .hero-content h2 {
+      font-size: 18px;
+    }
+    .hero-content p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+    .hero-content button {
+      font-size: 16px;
+      padding: 8px 16px;
+    }
+  
+    .hero-image {
+      width: 100%;
+    }
+    .social {
+      margin-top: 30px;
+      text-align: center;
+    }
+    .social a {
+      font-size: 21px;
+    }
+  }
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      tranform: translateY(50px);
+    }
+    100% {
+      opacity: 0;
+      tranform: translateY(0px);
+    }
+  }
+  @keyframes fadeInRight {
+    0% {
+      opacity: 0;
+      tranform: translateY(-50px);
+    }
+    100% {
+      opacity: 1;
+      tranform: translateY(0px);
+    }
+  }
+  .testimonial-heading {
+    letter-spacing: 1px;
+    margin: 30px 0px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .testimonial-heading h1 {
+    font-size: 2.2rem;
+    font-weight: 500;
+    background-color: rgb(229, 87, 5);
+    color: #ffffff;
+    padding: 10px 20px;
+  }
+  .testimonial-heading span {
+    font-size: 1.3rem;
+    color: #252525;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  
+.navbar{
+  width: 100%;
+    margin:0;
+    padding: 35px 0;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif; }
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: rgb(229, 61, 5);
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.content{
+    width: 100%;
+    position:absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    
+    font-weight: bold;
+    border: 2px solid #f4f7f6;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+}
+span{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+button:hover span {
+    width: 100%;
+    
+}
+
+button:hover {
+   border-color: rgb(229, 61, 5);
+   color: rgb(249, 249, 251);
+   background-color:rgb(229, 61, 5) ;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+    </style>
+        <div class="navbar">
+            <ul>
+                <li><a href="http://127.0.0.1:5500/home%20page.html">Home</a></li>
+                <li><a href="http://127.0.0.1:5500/login%20page.html">Login</a></li>
+                
+                
+                <li><a href="http://127.0.0.1:5500/contactus.html">Contact</a></li>
+                <li><a href="http://127.0.0.1:5500/test.html">Reviews</a></li>
+                
+            </ul>
+
+        </div>
+       
+   
+    
+    <section class="heor">
+        <div class="heading">
+            
+            <h1>ABOUT US</h1>
+          </div>
+      <div class="container">
+        <div class="hero-content">
+          <h2 style="color: rgb(255, 255, 255); font-family: 'Times New Roman', Times, serif;">Welcome To Our Website</h2>
+          <p>
+            Studysphere is a study abroad consultancy dedicated to
+            helping students achieve their academic and personal goals through
+            international education. With a team of knowledgeable experts and
+            strong partnerships with universities worldwide, we provide
+            comprehensive guidance and personalized assistance at every step of
+            the study abroad process. From selecting the right program and
+            institution to navigating applications,and cultural
+            adjustment, Studysphere is your trusted partner in making study
+            abroad dreams a reality. 
+            <p>"Expand your horizons, embrace new
+              cultures, and soar towards academic excellence with Studysphere,
+              your trusted guide to study abroad success. Let us shape your global
+              future and make your study dreams a reality!"</p>
+
+            <p>Contact us today to explore the world of opportunities waiting for you!!
+            </p>
+            
+          <button class="button"><a href="http://127.0.0.1:5500/home%20page.html">Learn More</a></button>
+        </div>
+
+        <div class="hero-image">
+          <img src="https://images.theconversation.com/files/415311/original/file-20210809-25-149neyb.jpg?ixlib=rb-1.1.0&rect=178%2C321%2C7761%2C4964&q=20&auto=format&w=320&fit=clip&dpr=2&usm=12&cs=strip" />
+        </div>
+        <br>
+        <br>
+      </div>
+      
+    </section>
+    <div class="social">
+        <a href=""><i class="fab fa-instagram"></i></a>
+        <a href=""><i class="fab fa-telegram"></i></a>
+        <a href=""><i class="fab fa-facebook"></i></a>
+  
+      </div>
+    
+    
+  </body>
+</html>

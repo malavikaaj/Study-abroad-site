@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>Register</title>
+    <meta charset="UT-8">
+    <meta http-equiv="X-UA-Compatible" content ="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="register.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+<body>
+  <style>
+    
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background: url("https://t4.ftcdn.net/jpg/02/67/11/87/360_F_267118750_2HUnTyd8qJzpbaSFROUXvu4Yk0n7gnXZ.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+.wrapper{
+    width : 420px;
+    background: transparent;
+    border: 2px solid rgb(219, 214, 214);
+    backdrop-filter: blur(20px);
+    color: antiquewhite;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(18, 17, 17);
+    padding: 30px 40px;
+}
+.navbar{
+    width: 100%;
+    margin:0;
+    padding: 35px 0;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.wrapper h1{
+    font-size: 36px;
+    text-align: center;
+    text-shadow: 0 0 5px rgb(247, 243, 243);
+}
+.wrapper .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: white;
+    border: none;
+    outline:none;
+    border: 2px solid rgb(213, 213, 207);
+    border-radius: 40px;
+    font-size: 16px;
+    color: rgb(6, 6, 6);
+    padding: 20px 45px 20px 20px;
+
+}
+.input-box i{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: black;
+
+}
+.wrapper .btn{
+    width: 100%;
+    height: 45px;
+    background: rgb(230, 227, 227);
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px black;
+    cursor: pointer;
+    font-size: 16px;
+    color: blue;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+a{
+    text-decoration: none;
+    color: #2908ad;
+}
+
+
+
+
+  </style>
+<div class="wrapper">
+    <form action="">
+    <h1 style="color: black;" >Register</h1>
+<div class="input-box">
+    <input type="text" placeholder="Email Id" required>
+    <i class='bx bxs-envelope'></i>
+
+</div>
+<div class="input-box">
+    <input type="text"
+    placeholder="Username" required>
+    <i class="bx bxs-user"></i>
+
+
+</div>
+<div class="input-box">
+    <input type="password"
+    placeholder="Password" required>
+    <i class="bx bxs-lock-alt"></i>
+
+</div>
+<div class="input-box">
+    <input type="text"
+    placeholder="Mobile Number" required>
+    <i class="bx bx-mobile"></i>
+    
+
+</div>
+
+
+<button type="submit" class="btn" ><b><a href="http://127.0.0.1:5500/redirect%20login.html">Create Account</a></b></button>
+
+
+
+</form>
+</div>
+</body>
+
+    
+</html>

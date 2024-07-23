@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  
+  <style>
+    body {
+      padding: 20px;
+      background-image: url("bgpic.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-color: black;
+      background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwsHBgYHBw0RCgcHBhYHBhYXEA8eFQcWFx0iIhYRFhQkHSggJBotISofITE0JSsuLjMuIyAzODUzNygtLjcBCgoKDQwOGA8NGyskHSUtOCs3NSstLS0yLSsrLS03KysrKystKy03LS4rLTcrNy03KystLS0tLSs1LSsrKy0rLf/AABEIAKgBLAMBIgACEQEDEQH/xAAYAAEBAAMAAAAAAAAAAAAAAAAAAwECB//EAB4QAQEAAgICAwAAAAAAAAAAAAASAiEBETFRQWGR/8QAGAEBAQEBAQAAAAAAAAAAAAAAAAMEAgH/xAAZEQEBAQADAAAAAAAAAAAAAAAAEhEBAmH/2gAMAwEAAhEDEQA/AOISSpJLnVJTklSSTSU5JUkk0lOSVJJNJTklSSTSU5JUkk0lOSVJJNJTklSSTSU5JUkk0lOSVJJNJTklSSTSU5JUkk0lOSVJJNJTklSSTSU5JUkk0lOSVJJNJTklSSTSU5JUkk0lOSVJJNJVklWSUtXlKSVZJNJSklWSTSUpJVkk0lKSVZJNJSklWSTSUpJVkk0lKSVZJNJSklWSTSUpJVkk0lKSVZJNJSklWSTSUpJVkk0lKSVZJNJSklWSTSUpJVkk0lKSVZJNJSklWSTSUpJVkk0lWSVZJSpolKSVZJKJSklWSSiUpJVkkolKSVZJKJSklWSSiUpJVkkolKSVZJKJSklWSSiUpJVkkolKSVZJKJSklWSSiUpJVkkolKSVZJKJSklWSSiUpJVkkolKSVZJKJSklWSSiUpJVkkolWSVZJS1eUpJVkk0lKSVZJNJSklWSTSUpJVkk0lKSVZJNJSklWSTSUpJVkk0lKSVZJNJSklWSTSUpJVkk0lKSVZJNJSklWSTSUpJVkk0lKSVZJNJSklWSTSUpJVkk0lKSVZJNJSklWSTSVZJVklLWiUpJVkk0lKSVZJNJSklWSTSUpJVkk0lKSVZJNJSklWSTSUpJVkk0lKSVZJNJSklWSTSUpJVkk0lKSVZJNJSklWSTSUpJVkk0lKSVZJNJSklWSTSUpJVkk0lKSVZJNJSklWSTSVZJVklKl5SklWSSiUpJVkkolKSVZJKJSklWSSiUpJVkkolKSVZJKJSklWSSiUpJVkkolKSVZJKJSklWSSiUpJVkkolKSVZJKJSklWSSiUpJVkkolKSVZJKJSklWSSiUpJVkkolKSVZJKJVklWSUaaJSklWSSiUpJVkkolKSVZJKJSklWSSiUpJVkkolKSVZJKJSklWSSiUpJVkkolKSVZJKJSklWSSiUpJVkkolKSVZJKJSklWSSiUpJVkkolKSVZJKJSklWSSiUpJVkkolKSVZJKJVklWSUtXlKSVZJNJSklWSTSUpJVkk0lKSVZJNJSklWSTSUpJVkk0lKSVZJNJSklWSTSUpJVkk0lKSVZJNJSklWSTSUpJVkk0lKSVZJNJSklWSTSUpJVkk0lKSVZJNJSklWSTSUpJVkk0lWSVZJS1olKSVZJNJSklWSTSUpJVkk0lKSVZJNJSklWSTSUpJVkk0lKSVZJNJSklWSTSUpJVkk0lKSVZJNJSklWSTSUpJVkk0lKSVZJNJSklWSTSUpJVkk0lKSVZJNJSklWSTSUpJVkk0lWSVZJS1olKSVZJNJSklWSTSUpJVkk0lKSVZJNJSklWSTSUpJVkk0lKSVZJNJSklWSTSUpJVkk0lKSVZJNJSklWSTSUpJVkk0lKSVZJNJSklWSTSUpJVkk0lKSVZJNJSklWSTSUpJVkk0lWSQT1bCSQNMJJA0wkkDTCSQNMJJA0wkkDTCSQNMJJA0wkkDTCSQNMJJA0wkkDTCSQNMJJA0wkkDTCWcceN9+tMBpz1bcY49b77OcMd78ePsHtOZ9Jx+fX615x4714Ap7x1f/Z);
+    }
+    h1 {
+      color: rgb(255, 255, 255);
+    }
+    .mb-3{
+        color: rgb(255, 255, 255); 
+    }
+    
+
+    .contact-form {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    .navbar{
+  width: 100%;
+    margin:0;
+    padding: 35px 0;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif; }
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: rgb(229, 61, 5);
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+  </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="http://127.0.0.1:5500/home%20page.html">Home</a></li>
+            <li><a href="http://127.0.0.1:5500/login%20page.html">Login</a></li>
+            <li><a href="http://127.0.0.1:5500/aboutus.html">About Us</a></li>
+            
+            <li><a href="http://127.0.0.1:5500/test.html">Reviews</a></li>
+            
+        </ul>
+  
+    </div>
+  <div class="container">
+    <h1 class="text-center mt-4">Contact Us</h1>
+    <div class="contact-form mt-4">
+      <form>
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+        </div>
+        <div class="mb-3">
+            <label for="number" class="form-label">Number</label>
+            <input type="text" class="form-control" id="number" placeholder="Enter your phone number" required>
+          </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+        </div>
+        <div class="mb-3">
+          <label for="subject" class="form-label">Subject</label>
+          <input type="text" class="form-control" id="subject" placeholder="Enter subject" required>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" rows="5" placeholder="Enter your message" required></textarea>
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
